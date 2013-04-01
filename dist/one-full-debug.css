@@ -194,46 +194,10 @@ body .fn-hide {
 }
 .iconfont {
     font-family: "rei";
-    font-size: 12px;
     font-style: normal;
     color: #4d4d4d;
     cursor: default;
     -webkit-font-smoothing: antialiased;
-}
-/* 预设左右位置 */
-.iconfont-right {
-    margin-left:0;
-    margin-right:4px;
-}
-.iconfont-right {
-    margin-right:0;
-    margin-left:4px;
-}
-/* 预设字体大小 */
-.iconfont-14px {
-    font-size:14px;
-}
-.iconfont-16px {
-    font-size:16px;
-}
-.iconfont-18px {
-    font-size:18px;
-}
-/* 预设字体颜色 */
-.iconfont-black {
-    color:#000;
-}
-.iconfont-gray {
-    color:#999;
-}
-.iconfont-light-gray {
-    color:#ccc;
-}
-.iconfont-white {
-    color:#fff;
-}
-.iconfont-blue {
-    color:#0088cc;
 }
 
 
@@ -4983,13 +4947,13 @@ a.ui-poptip-close:hover {
 }
 
 .ui-tipbox-icon .iconfont {
-    font-size: 32px;
+    font-size: 36px;
     position: absolute;
     top: -4px;
     left: -6px;
     width: 32px;
     height: 32px;
-    line-height: 34px;
+    line-height: 36px;
     text-shadow: 1px 1px 0 #fff;
 }
 
@@ -5099,8 +5063,6 @@ a.ui-poptip-close:hover {
     margin: 0;
     color: #4D4D4D;
     position:relative;
-    vertical-align:middle;
-    line-height:16px;
     font-size: 12px;
     zoom:1;
 }
@@ -5111,12 +5073,11 @@ a.ui-poptip-close:hover {
 }
 .ui-tiptext .iconfont {
     vertical-align: bottom;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 1.33em;
+    line-height: 1;
     text-shadow: 0 1px 0 #fff;
 }
 .ui-tiptext-icon {
-    margin-right: 3px;
     display:inline-block;
     *display:inline;
     *zoom:1;
@@ -5178,10 +5139,8 @@ a.ui-poptip-close:hover {
     position: absolute;
     font-size: 14px;  
     font-family: "SimSun";
-    top: 0;
-    left: 0;
     font-style: normal;
-    line-height: 1.5;
+    line-height: 1;
 }
 
 .ui-tiptext-arrowup, .ui-tiptext-arrowleft, .ui-tiptext-arrowdown {
@@ -5191,21 +5150,15 @@ a.ui-poptip-close:hover {
 
 .ui-tiptext-arrowup {
     left: 32px;
-    top:-10px;
-    _top:-9px;
+    top:-7px;
 }
 .ui-tiptext-arrowup em {
     top: -1px;
 }
-/* ie9  */
-:root .ui-tiptext-arrowup {
-    top:-9px\9;
-}
 
 .ui-tiptext-arrowleft {
     left: -6px;
-    top:5px;
-    _top:6px;
+    top:10px;
 }
 .ui-tiptext-arrowleft em {
     left:-1px;
@@ -5213,15 +5166,9 @@ a.ui-poptip-close:hover {
 
 .ui-tiptext-arrowdown {
     left: 32px;
-    top:20px;
-    top:22px\0;
-    *top:22px;
-    _top:21px;
+    bottom: -3px;
 }
-/* ie9  */
-:root .ui-tiptext-arrowdown {
-    top:23px\9;
-}
+
 .ui-tiptext-arrowdown em {
     top: 1px;
 }
