@@ -4223,7 +4223,7 @@ a.ui-button-sblue:hover {
     float: left;
     width: 170px;
     margin-left: -180px;
-    padding-top: 6px;
+    padding-top: 4px;
     text-align: right;
     font-size: 14px;
 }
@@ -4306,128 +4306,25 @@ a.ui-button-sblue:hover {
 /*! endblock alice/list/1.0.0/list-debug.css */
 
 /*! block alice/nav/1.0.0/nav-debug.css */
-.ui-nav {
-  position: relative;
-}
-.ui-nav a {
-  text-decoration: none;
-}
-.ui-nav a:hover {
-  text-decoration: none;
-}
-.ui-nav ul,
-.ui-nav li {
-  list-style-type: none;
-}
-.ui-nav-main {
-  zoom: 1;
-  margin: 0;
-  padding-left: 10px;
-  -webkit-border-radius: 2px 2px 0 0;
-  border-radius: 2px 2px 0 0;
-  background: -webkit-linear-gradient(top, #f39100, #f17a00);
-  background: -moz-linear-gradient(top, #f39100, #f17a00);
-  filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#f39100, endColorstr=#f17a00);
-}
-.ui-nav-main:before,
-.ui-nav-main:after {
-  content: "";
-  display: table;
-}
-.ui-nav-main:after {
-  clear: both;
-}
-.ui-nav-item {
-  float: left;
-  margin: 7px 5px 0 0;
-}
-.ui-nav-item a {
-  display: inline-block;
-  _display: inline;
-  _zoom: 1;
-  height: 35px;
-  padding: 0 15px;
-  line-height: 35px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 14px;
-}
-.ui-nav-item a:hover {
-  background: -webkit-linear-gradient(top, #f49c25, #f49726);
-  background: -moz-linear-gradient(top, #f49c25, #f49726);
-  filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#f49c25, endColorstr=#f49726);
-  -webkit-border-radius: 2px 2px 0 0;
-  border-radius: 2px 2px 0 0;
-}
-.ui-nav-item-current a,
-.ui-nav-item-current a:hover {
-  background: #fff;
-  filter: none;
-  color: #6d6969;
-  -webkit-border-radius: 2px 2px 0 0;
-  border-radius: 2px 2px 0 0;
-}
-.ui-nav-submain {
-  display: none;
-  position: absolute;
-  left: 10px;
-  top: 42px;
-  margin: 0;
-  padding: 0;
-}
-.ui-nav-subitem {
-  float: left;
-  margin: 5px 10px 0 0;
-}
-.ui-nav-subitem a {
-  padding: 0 15px;
-  height: 24px;
-  line-height: 26px;
-  background: transparent;
-  border: 1px solid transparent;
-  _border-color: #ff6347;
-  _filter: chroma(#ff6347);
-  color: #868686;
-  font-weight: normal;
-  font-size: 12px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-.ui-nav-subitem a:hover {
-  background: transparent;
-  filter: none;
-  -webkit-box-shadow: 0px -1px 0px #f6f6f6;
-  box-shadow: 0px -1px 0px #f6f6f6;
-  border: 1px solid #cecece;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-.ui-nav-subitem-current a,
-.ui-nav-subitem-current a:hover {
-  border-left: 1px solid #dadada;
-  border-right: 1px solid #dadada;
-  border-top: 1px solid #bebebe;
-  border-bottom: 1px solid transparent;
-  -webkit-box-shadow: inset 0px 1px 0px #dadada;
-  box-shadow: inset 0px 1px 0px #dadada;
-  background: #e7e7e7;
-}
-.ui-nav-subcontainer {
-  height: 37px;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  background: -webkit-linear-gradient(top, #fefefe, #f7f7f7);
-  background: -moz-linear-gradient(top, #fefefe, #f7f7f7);
-  filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#fefefe, endColorstr=#f7f7f7);
-}
-.ui-nav-item-current .ui-nav-submain {
-  display: block;
-}
-.ui-nav-nosub .ui-nav-subcontainer,
-.ui-nav-nosub .ui-nav-subitem {
-  display: none;
-}
+.ui-nav{position:relative;}
+.ui-nav a{text-decoration:none;}
+.ui-nav a:hover{text-decoration:none}
+.ui-nav ul,.ui-nav li{list-style-type:none}
+.ui-nav-main{zoom:1;margin:0;padding-left:10px;-webkit-border-radius:2px 2px 0 0;border-radius:2px 2px 0 0;background:-webkit-linear-gradient(top,#F39100,#F17A00);background:-moz-linear-gradient(top,#F39100,#F17A00);background:-ms-linear-gradient(#F39100,#F17A00);background:-o-linear-gradient(#F39100,#F17A00);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF39100, endColorstr=#FFF17A00)}
+.ui-nav-main:before,.ui-nav-main:after{content:"";display:table}
+.ui-nav-main:after{clear:both}
+.ui-nav-item{float:left;margin:7px 5px 0 0;}
+.ui-nav-item a{display:inline-block;_display:inline;_zoom:1;height:35px;padding:0 15px;line-height:35px;color:#fff;font-weight:bold;font-size:14px;}
+.ui-nav-item a:hover{color:#fff;background:-webkit-linear-gradient(top,#F49C25,#F49726);background:-moz-linear-gradient(top,#F49C25,#F49726);background:-ms-linear-gradient(#F49C25,#F49726);background:-o-linear-gradient(#F49C25,#F49726);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF49C25, endColorstr=#FFF49726);-webkit-border-radius:2px 2px 0 0;border-radius:2px 2px 0 0}
+.ui-nav-item-current a,.ui-nav-item-current a:hover{background:#fff;filter:none;color:#6d6969;-webkit-border-radius:2px 2px 0 0;border-radius:2px 2px 0 0}
+.ui-nav-submain{display:none;position:absolute;left:10px;top:42px;margin:0;padding:0}
+.ui-nav-subitem{float:left;margin:5px 10px 0 0;}
+.ui-nav-subitem a{display:inline-block;*display:inline;zoom:1;padding:0 15px;height:26px;line-height:26px;background:transparent;color:#868686;font-weight:normal;font-size:12px;-webkit-border-radius:3px;border-radius:3px;}
+.ui-nav-subitem a:hover{height:24px;line-height:24px;padding:0 14px;background:transparent;-webkit-box-shadow:0 -1px 0 #f6f6f6;box-shadow:0 -1px 0 #f6f6f6;border:1px solid #cecece;-webkit-border-radius:3px;border-radius:3px}
+.ui-nav-subitem-current a,.ui-nav-subitem-current a:hover{height:24px;line-height:24px;padding:0 14px;border-left:1px solid #dadada;border-right:1px solid #dadada;border-top:1px solid #bebebe;border-bottom:1px solid transparent;_border-bottom:1px solid #dadada;-webkit-box-shadow:inset 0 1px 0 #dadada;box-shadow:inset 0 1px 0 #dadada;background:#e7e7e7}
+.ui-nav-subcontainer{height:37px;border-left:1px solid #ccc;border-right:1px solid #ccc;border-bottom:1px solid #ccc;background:-webkit-linear-gradient(top,#FEFEFE,#F7F7F7);background:-moz-linear-gradient(top,#FEFEFE,#F7F7F7);background:-ms-linear-gradient(#FEFEFE,#F7F7F7);background:-o-linear-gradient(#FEFEFE,#F7F7F7);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFEFEFE, endColorstr=#FFF7F7F7)}
+.ui-nav-item-current .ui-nav-submain{display:block}
+.ui-nav-nosub .ui-nav-subcontainer,.ui-nav-nosub .ui-nav-subitem{display:none}
 /*! endblock alice/nav/1.0.0/nav-debug.css */
 
 /*! block alice/paging/1.0.0/paging-debug.css */
@@ -4853,14 +4750,12 @@ a.ui-poptip-close:hover {
 /*! block alice/table/1.0.0/table-debug.css */
 /* alice.table 样式模块 */
 
-@charset "utf-8";
-
 .ui-table {
     border-collapse:collapse;
     border:1px solid #ccc;
     width:100%;
-    text-align: left;
     font-size: 12px;
+    text-align: left;    
 }
 .ui-table tr:nth-child(even),
 .ui-table-split /* 隔行换色效果 */,
@@ -4875,16 +4770,17 @@ a.ui-poptip-close:hover {
 }
 .ui-table thead {
     color:#666;
+    background-color: #F6F6F6;    
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F8F8F8', endColorstr='#F2F2F2');
+    background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#F2F2F2));
+    background: -moz-linear-gradient(top, #F8F8F8, #F2F2F2);
+    background: -o-linear-gradient(top, #F8F8F8, #F2F2F2);
+    background: linear-gradient(top, #F8F8F8, #F2F2F2);
 }
 .ui-table th {
     padding:7px 9px;
     border-bottom:1px solid #d9d9d9;
-    background-color: #F6F6F6;
-    background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#F2F2F2));
-    background: -moz-linear-gradient(top, #F8F8F8, #F2F2F2);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F8F8F8', endColorstr='#F2F2F2');
-    background:-o-linear-gradient(top, #F8F8F8, #F2F2F2);
-    background: linear-gradient(top, #F8F8F8, #F2F2F2);
+    text-align: left;    
 }
 .ui-table td {
     padding:8px 9px 7px;
@@ -5047,7 +4943,7 @@ a.ui-poptip-close:hover {
 }
 /*! endblock alice/tipbox/1.0.0/tipbox-debug.css */
 
-/*! block alice/tiptext/1.0.0/tiptext-debug.css */
+/*! block alice/tiptext/1.0.1/tiptext-debug.css */
 /* alice.tiptext 样式模块 */
 
 @charset "utf-8";
@@ -5066,6 +4962,7 @@ a.ui-poptip-close:hover {
 }
 .ui-tiptext .iconfont {
     font-size: 1.33em;
+    line-height: 1em;
     text-shadow: 0 1px 0 #fff;
     position: relative;
     top: 2px;
@@ -5209,7 +5106,7 @@ a.ui-poptip-close:hover {
 .ui-tiptext-container-wait .ui-tiptext-arrow span {
     color:#FFF9D9;
 }
-/*! endblock alice/tiptext/1.0.0/tiptext-debug.css */
+/*! endblock alice/tiptext/1.0.1/tiptext-debug.css */
 
 /*! block alice/select/1.0.0/select-debug.css */
 /* alice.select 样式模块 */
