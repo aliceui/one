@@ -17,7 +17,7 @@
     "license": "MIT",
     "spm": {
         "alias": {
-            "base": "alice/base/1.0.0/base.css",
+            "base": "alice/base/1.0.1/base.css",
             "iconfont": "alice/iconfont/1.0.0/iconfont.css",
             "grid": "alice/grid/1.0.0/grid.css",
             "animate": "alice/animate/1.0.0/animate.css",

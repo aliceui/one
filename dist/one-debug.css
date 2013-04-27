@@ -1,5 +1,5 @@
 /*! define alice/one/1.0.0/one-debug.css */
-/*! block alice/base/1.0.0/base-debug.css */
+/*! block alice/base/1.0.1/base-debug.css */
 /* alice.base 样式模块 */
 
 @charset "utf-8";
@@ -96,9 +96,15 @@ sub, sup {
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
-/* 让链接在 hover 状态下显示下划线 */
+/* 正常链接 未访问 */
+a:link {
+    color: #08c;
+}
+
+/* 鼠标悬停 */
 a:hover {
-    text-decoration:underline;
+    color: #08c;
+    text-decoration: underline;
 }
 
 /* 默认不显示下划线，保持页面简洁 */
@@ -171,7 +177,7 @@ body .fn-hide {
 .fn-webkit-adjust {
     -webkit-text-size-adjust: none;
 }
-/*! endblock alice/base/1.0.0/base-debug.css */
+/*! endblock alice/base/1.0.1/base-debug.css */
 
 /*! block alice/iconfont/1.0.0/iconfont-debug.css */
 /* 
