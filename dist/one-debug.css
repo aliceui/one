@@ -28,7 +28,7 @@ audio,canvas,video {
 
 /* 要注意表单元素并不继承父级 font 的问题 */
 body,button,input,select,textarea {
-    font:12px/1.5 tahoma,arial,"Hiragino Sans GB","Microsoft Yahei",\5b8b\4f53;
+    font:12px/1.5 tahoma,arial,"Hiragino Sans GB",\5b8b\4f53;
 }
 input,select,textarea {
     font-size:100%;
@@ -5111,6 +5111,14 @@ a.ui-poptip-close:hover {
 }
 .ui-tiptext-container-wait .ui-tiptext-arrow span {
     color:#FFF9D9;
+}
+
+.ui-tiptext-close {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    color: #60A2C5;
+    cursor: pointer;
 }
 /*! endblock alice/tiptext/1.0.1/tiptext-debug.css */
 
