@@ -4758,7 +4758,7 @@ a.ui-poptip-close:hover {
 }
 /*! endblock alice/tab/1.0.0/tab-debug.css */
 
-/*! block alice/table/1.0.0/table-debug.css */
+/*! block alice/table/1.0.1/table-debug.css */
 /* alice.table 样式模块 */
 
 .ui-table {
@@ -4803,12 +4803,6 @@ a.ui-poptip-close:hover {
 .ui-table tfoot td {
     border-bottom:none;
 }
-.ui-table .ui-table-action {
-    background-color:#FFFFEF;
-}
-.ui-table .ui-table-selected {
-    background-color:#FEFFC5;
-}
 
 /* 无边框table加上ui-table-noborder */
 .ui-table-noborder, .ui-table-noborder td, .ui-table-noborder tr, .ui-table-noborder th {
@@ -4823,7 +4817,7 @@ a.ui-poptip-close:hover {
     border:none;
     outline:none;
 }
-/*! endblock alice/table/1.0.0/table-debug.css */
+/*! endblock alice/table/1.0.1/table-debug.css */
 
 /*! block alice/tipbox/1.1.0/tipbox-debug.css */
 /* alice.tipbox 样式模块 */
