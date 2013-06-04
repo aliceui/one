@@ -4825,10 +4825,8 @@ a.ui-poptip-close:hover {
 }
 /*! endblock alice/table/1.0.0/table-debug.css */
 
-/*! block alice/tipbox/1.0.0/tipbox-debug.css */
+/*! block alice/tipbox/1.1.0/tipbox-debug.css */
 /* alice.tipbox 样式模块 */
-
-@charset "utf-8";
 
 .ui-tipbox {
     position: relative;
@@ -4854,70 +4852,70 @@ a.ui-poptip-close:hover {
     width: 32px;
     height: 32px;
     line-height: 36px;
-    text-shadow: 1px 1px 0 #fff;
+    text-shadow: 0 1px 0 #fff;
 }
 
 .ui-tipbox-message {
-    border: 1px solid #CBD7E2;
-    background: #E4F5FE;
+    border: 1px solid #b2e2ea;
+    background: #e5f2f8;
 }
 
 .ui-tipbox-message .ui-tipbox-icon .iconfont {
-    color: #0483CF;
+    color: #68b5e2;
 }
 
 .ui-tipbox-success {
     border: 1px solid #E1E1CA;
-    background: #EDFED0;
+    background: #edfed0;
 }
 
 .ui-tipbox-success .ui-tipbox-icon .iconfont {
-    color: #20DC19;
+    color: #b5de70;
 }
 
 .ui-tipbox-error {
     background: #FDEEE9;
-    border: 1px solid #F6C7B8;
+    border: 1px solid #fadcd3;
 }
 
 .ui-tipbox-error .ui-tipbox-icon .iconfont {
-    color: #FF4800;
+    color: #f17975;
 }
 
 .ui-tipbox-warning {
-    background: #FEFEA4;
-    border: 1px solid #E6C46A;
+    background: #fefea4;
+    border: 1px solid #e6e098;
 }
 
 .ui-tipbox-warning .ui-tipbox-icon .iconfont {
-    color: #FFA700;
+    color: #ff9966;
 }
 
 .ui-tipbox-question {
-    border: 1px solid #CBD7E2;
-    background: #E4F5FE;
+    border: 1px solid #b2e2ea;
+    background: #e0f4ff;
 }
 
 .ui-tipbox-question .ui-tipbox-icon .iconfont {
-    color: #00B5F3;
+    color: #66cae2;
 }
 
 .ui-tipbox-stop {
     background: #FDEEE9;
-    border: 1px solid #F4C7B5;
+    border: 1px solid #fadcd3;
 }
 
 .ui-tipbox-stop .ui-tipbox-icon .iconfont {
-    color: #FF5500;
+    color: #f17975;
 }
 
 .ui-tipbox-wait {
-    border: 1px solid #E6CBB1;
+    border: 1px solid #fae3cc;
     background: #FFF9D9;
 }
 
 .ui-tipbox-wait .ui-tipbox-icon .iconfont {
-    color: #B26100;
+    color: #d1a066;
 }
 
 .ui-tipbox-content {
@@ -4952,12 +4950,10 @@ a.ui-poptip-close:hover {
     _border-color:tomato;   /* fix ie6 dont support border transparent */
     _filter:chroma(color=tomato);
 }
-/*! endblock alice/tipbox/1.0.0/tipbox-debug.css */
+/*! endblock alice/tipbox/1.1.0/tipbox-debug.css */
 
-/*! block alice/tiptext/1.0.2/tiptext-debug.css */
+/*! block alice/tiptext/1.1.0/tiptext-debug.css */
 /* alice.tiptext 样式模块 */
-
-@charset "utf-8";
 
 .ui-tiptext {
     margin: 0;
@@ -4968,7 +4964,7 @@ a.ui-poptip-close:hover {
 }
 
 .ui-tiptext-follow {
-    padding-left: 19px;
+    padding-left: 21px;
 }
 
 .ui-tiptext-container {
@@ -4982,6 +4978,7 @@ a.ui-poptip-close:hover {
     text-shadow: 0 1px 0 #fff;
     position: relative;
     top: 2px;
+    margin-right: 2px;
 }
 .ui-tiptext-icon {
     display:inline-block;
@@ -4989,53 +4986,53 @@ a.ui-poptip-close:hover {
     *zoom:1;
 }
 .ui-tiptext-message .ui-tiptext-icon {
-    color: #0483CF;
+    color: #68b5e2;
 }
 .ui-tiptext-container-message {
-    background: #e5f5ff;
-    border: 1px solid #c9d5e2;
+    border: 1px solid #b2e2ea;
+    background: #e5f2f8;
 }
 .ui-tiptext-success .ui-tiptext-icon {
-    color: #20DC19;    
+    color: #b5de70;
 }
 .ui-tiptext-container-success {
     background: #E7FFCE;
     border: 1px solid #B9E2A0;
 }
 .ui-tiptext-error .ui-tiptext-icon {
-    color: #FF4800;    
+    color: #f17975;
 }
 .ui-tiptext-container-error {
-    background: #fceee8;
-    border: 1px solid #f6c8b5;
+    background: #FDEEE9;
+    border: 1px solid #fadcd3;
 }
 .ui-tiptext-warning .ui-tiptext-icon {
-    color: #FFA700;    
+    color: #ff9966;    
 }
 .ui-tiptext-container-warning {
-    background: #ffff8d;
-    border: 1px solid #e7c560;
+    background: #fefea4;
+    border: 1px solid #e6e098;
 }
 .ui-tiptext-question .ui-tiptext-icon {
-    color: #00B5F3;    
+    color: #66cae2;    
 }
 .ui-tiptext-container-question {
-    background: #e5f5ff;
-    border: 1px solid #c9d5e2;
+    border: 1px solid #b2e2ea;
+    background: #e0f4ff;
 }
 .ui-tiptext-stop .ui-tiptext-icon {
-    color: #FF5500;
+    color: #f17975;
 }
 .ui-tiptext-container-stop {
-    background: #fceee8;
-    border: 1px solid #f6c8b5;
+    background: #FDEEE9;
+    border: 1px solid #fadcd3;
 }
 .ui-tiptext-wait .ui-tiptext-icon {
-    color: #B26100;
+    color: #d1a066;
 }
 .ui-tiptext-container-wait{
+    border: 1px solid #fae3cc;
     background: #FFF9D9;
-    border: 1px solid #E6CBB1;
 }
 
 /* arrow */
@@ -5081,43 +5078,43 @@ a.ui-poptip-close:hover {
 
 /* arrow color*/
 .ui-tiptext-container-message .ui-tiptext-arrow em {
-    color:#c9d5e2;
+    color:#b2e2ea;
 }
 .ui-tiptext-container-message .ui-tiptext-arrow span {
-    color:#e5f5ff;
+    color:#e5f2f8;
 }
 .ui-tiptext-container-success .ui-tiptext-arrow em {
-    color:#B9E2A0;
+    color:#E1E1CA;
 }
 .ui-tiptext-container-success .ui-tiptext-arrow span {
-    color:#E7FFCE;
+    color:#edfed0;
 }
 .ui-tiptext-container-error .ui-tiptext-arrow em {
-    color:#f6c8b5;
+    color:#fadcd3;
 }
 .ui-tiptext-container-error .ui-tiptext-arrow span {
-    color:#fceee8;
+    color:#FDEEE9;
 }
 .ui-tiptext-container-warning .ui-tiptext-arrow em {
-    color:#e7c560;
+    color:#e6e098;
 }
 .ui-tiptext-container-warning .ui-tiptext-arrow span {
-    color:#ffff8d;
+    color:#fefea4;
 }
 .ui-tiptext-container-question .ui-tiptext-arrow em {
-    color:#c9d5e2;
+    color:#b2e2ea;
 }
 .ui-tiptext-container-question .ui-tiptext-arrow span {
-    color:#e5f5ff;
+    color:#e0f4ff;
 }
 .ui-tiptext-container-stop .ui-tiptext-arrow em {
-    color:#f6c8b5;
+    color:#fadcd3;
 }
 .ui-tiptext-container-stop .ui-tiptext-arrow span {
-    color:#fceee8;
+    color:#FDEEE9;
 }
 .ui-tiptext-container-wait .ui-tiptext-arrow em {
-    color:#E6CBB1;
+    color:#fae3cc;
 }
 .ui-tiptext-container-wait .ui-tiptext-arrow span {
     color:#FFF9D9;
@@ -5130,7 +5127,7 @@ a.ui-poptip-close:hover {
     color: #60A2C5;
     cursor: pointer;
 }
-/*! endblock alice/tiptext/1.0.2/tiptext-debug.css */
+/*! endblock alice/tiptext/1.1.0/tiptext-debug.css */
 
 /*! block alice/select/1.0.0/select-debug.css */
 /* alice.select 样式模块 */
