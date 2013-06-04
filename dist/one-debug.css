@@ -1,4 +1,4 @@
-/*! define alice/one/1.0.0/one-debug.css */
+/*! define alice/one/1.1.0/one-debug.css */
 /*! block alice/base/1.0.1/base-debug.css */
 /* alice.base 样式模块 */
 
@@ -3614,7 +3614,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 }
 /*! endblock alice/box/1.0.0/box-debug.css */
 
-/*! block alice/button/1.0.0/button-debug.css */
+/*! block alice/button/1.1.0/button-debug.css */
 .ui-button * {
     margin:0;
     padding:0;
@@ -3657,32 +3657,19 @@ input.ui-button-text, button.ui-button-text {
     top: 1px;
 }
 
-/*! block alice/button/1.0.0/ui-button-orange-debug.css */
+/*! block alice/button/1.1.0/ui-button-orange-debug.css */
 .ui-button-lorange,
 .ui-button-morange,
 .ui-button-sorange {
     color: #fff;
-    border:1px solid #F67600;
-    background-color: #F5AA2B;    
-    background: -webkit-gradient(linear, left top, left bottom, from(#FFA600), to(#FE9200));
-    background: -moz-linear-gradient(top, #FFA600, #FE9200);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFA600', endColorstr='#FE9200');
-    background:-o-linear-gradient(top, #FFA600, #FE9200);
-    background: linear-gradient(top, #FFA600, #FE9200);
-    box-shadow: 0 -2px 3px rgba(255, 255, 255, 0.4) inset;
+    border:1px solid #d66500;
+    background-color: #f57403;    
 }
 
 .ui-button-lorange:hover,
 .ui-button-morange:hover,
 .ui-button-sorange:hover {
-    border: 1px solid #F26600;
-    background-color: #F5AA2B;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FFB91C), to(#FFA700));
-    background: -moz-linear-gradient(top, #FFB91C, #FFA700);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFB91C', endColorstr='#FFA700');
-    background:-o-linear-gradient(top, #FFB91C, #FFA700);
-    background: linear-gradient(top, #FFB91C, #FFA700);
-    box-shadow: 0 -2px 2px rgba(255, 255, 255, 0.4) inset;
+    background-color: #fb8318;
 }
 
 a.ui-button-lorange,
@@ -3694,52 +3681,57 @@ a.ui-button-sorange:hover,
 a.ui-button-lorange:active,
 a.ui-button-morange:active,
 a.ui-button-sorange:active {
-    color:#fff;    
+    color:#fff;
 }
 
 .ui-button-lorange {
-    line-height:33px;
-    height:33px;
+    line-height:32px;
+    height:32px;
 }
 
 .ui-button-morange {
-    line-height:29px;
-    height:29px;
+    line-height:28px;
+    height:28px;
 }
 
 .ui-button-sorange {
     padding: 0 12px;
-    line-height:23px;
-    height:23px;
+    line-height:24px;
+    height:24px;
     font-size:12px;
 }
-/*! endblock alice/button/1.0.0/ui-button-orange-debug.css */
 
-/*! block alice/button/1.0.0/ui-button-white-debug.css */
+a.ui-button-lorange {
+    line-height:30px;
+    height:30px;
+}
+
+a.ui-button-morange {
+    line-height:26px;
+    height:26px;
+}
+
+a.ui-button-sorange {
+    line-height:22px;
+    height:22px;
+}
+/*! endblock alice/button/1.1.0/ui-button-orange-debug.css */
+
+/*! block alice/button/1.1.0/ui-button-white-debug.css */
 .ui-button-lwhite,
 .ui-button-mwhite,
 .ui-button-swhite {
-    border:1px solid #B3B3B3;
-    color:#595959;
-    background-color: #F2F2F2;    
-    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#EBEBEB));
-    background: -moz-linear-gradient(top, #FFFFFF, #EBEBEB);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#EBEBEB');
-    background:-o-linear-gradient(top, #FFFFFF, #EBEBEB);
-    background: linear-gradient(top, #FFFFFF, #EBEBEB);
-    box-shadow: 0 -2px 2px rgba(255, 255, 255, 0.33) inset;
+    border:1px solid #afafaf;
+    background-color: #f3f3f3;
+    color: #777;
 }
 
 .ui-button-lwhite:hover,
 .ui-button-mwhite:hover,
 .ui-button-swhite:hover {
-    border: 1px solid #999;
-    background-color: #F6F6F6;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F0F0F0));
-    background: -moz-linear-gradient(top, #FFFFFF, #F0F0F0);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F0F0F0');
-    background:-o-linear-gradient(top, #FFFFFF, #F0F0F0);
-    background: linear-gradient(top, #FFFFFF, #F0F0F0);
+    border: 1px solid #8e8e8e;
+    background-color: #fcfbfb;
+    color: #676d70;
 }
 
 a.ui-button-lwhite,
@@ -3747,40 +3739,56 @@ a.ui-button-mwhite,
 a.ui-button-swhite,
 a.ui-button-lwhite:active,
 a.ui-button-mwhite:active,
-a.ui-button-swhite:active,
+a.ui-button-swhite:active {
+    color: #777;
+}   
 a.ui-button-lwhite:hover,
 a.ui-button-mwhite:hover,
 a.ui-button-swhite:hover {
-    color:#595959;    
+    color:#676d70;
 }
 
 .ui-button-lwhite {
-    line-height:33px;
-    height:33px;
+    line-height:32px;
+    height:32px;
 }
 
 .ui-button-mwhite {
-    line-height:29px;
-    height:29px;
+    line-height:28px;
+    height:28px;
 }
 
 .ui-button-swhite {
-    line-height:23px;
-    height:23px;
+    line-height:24px;
+    height:24px;
     padding:0 12px;
     font-size:12px;
 }
-/*! endblock alice/button/1.0.0/ui-button-white-debug.css */
 
-/*! block alice/button/1.0.0/ui-button-disable-debug.css */
+a.ui-button-lwhite {
+    line-height:30px;
+    height:30px;
+}
+
+a.ui-button-mwhite {
+    line-height:26px;
+    height:26px;
+}
+
+a.ui-button-swhite {
+    line-height:22px;
+    height:22px;
+}
+/*! endblock alice/button/1.1.0/ui-button-white-debug.css */
+
+/*! block alice/button/1.1.0/ui-button-disable-debug.css */
 .ui-button-ldisable,
 .ui-button-mdisable,
 .ui-button-sdisable {
-    color:#fff;    
+    color:#999;    
     border: none;
-    background: #D4D4D4;
+    background: #cacccd;
     cursor: default;
-    text-shadow: 0 -1px 1px #aaa;    
 }
 
 a.ui-button-ldisable,
@@ -3792,22 +3800,22 @@ a.ui-button-sdisable:active,
 a.ui-button-ldisable:hover,
 a.ui-button-mdisable:hover,
 a.ui-button-sdisable:hover {
-    color:#fff; 
+    color:#999; 
 }
 
 .ui-button-ldisable {
-    line-height:35px;
-    height:35px;
+    line-height:32px;
+    height:32px;
 }
 
 .ui-button-mdisable {
-    line-height:31px;
-    height:31px;
+    line-height:28px;
+    height:28px;
 }
 
 .ui-button-sdisable {
-    line-height:25px;
-    height:25px;
+    line-height:24px;
+    height:24px;
     padding:0 12px;
     font-size:12px;
 }
@@ -3817,33 +3825,22 @@ input.ui-button-mdisable,
 input.ui-button-sdisable {
     cursor: default;
 }
-/*! endblock alice/button/1.0.0/ui-button-disable-debug.css */
+/*! endblock alice/button/1.1.0/ui-button-disable-debug.css */
 
-/*! block alice/button/1.0.0/ui-button-blue-debug.css */
+/*! block alice/button/1.1.0/ui-button-blue-debug.css */
 .ui-button-lblue,
 .ui-button-mblue,
 .ui-button-sblue {
     border:none;
     color:#fff;
-
-    background-color: #F5AA2B;    
-    background: -webkit-gradient(linear, left top, left bottom, from(#3283C6), to(#0A6695));
-    background: -moz-linear-gradient(top, #3283C6, #0A6695);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3283C6', endColorstr='#0A6695');
-    background:-o-linear-gradient(top, #3283C6, #0A6695);
-    background: linear-gradient(top, #3283C6, #0A6695);
-    box-shadow: 0 -2px 2px rgba(255, 255, 255, 0.25) inset;
+    border: 1px solid #154c67;
+    background-color: #006ba1;    
 }
 
 .ui-button-lblue:hover,
 .ui-button-mblue:hover,
 .ui-button-sblue:hover {
-    background-color: #F5AA2B;
-    background: -webkit-gradient(linear, left top, left bottom, from(#3295E5), to(#0C689B));
-    background: -moz-linear-gradient(top, #3295E5, #0C689B);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3295E5', endColorstr='#0C689B');
-    background:-o-linear-gradient(top, #3295E5, #0C689B);
-    background: linear-gradient(top, #3295E5, #0C689B);
+    background-color: #007ab8;
 }
 
 a.ui-button-lblue,
@@ -3855,29 +3852,44 @@ a.ui-button-sblue:active,
 a.ui-button-lblue:hover,
 a.ui-button-mblue:hover,
 a.ui-button-sblue:hover {
-    color:#fff;    
+    color:#fff;
 }
 
 .ui-button-lblue {
-    line-height:33px;
-    height:33px;
+    line-height:32px;
+    height:32px;
 }
 
 .ui-button-mblue {
-    line-height:29px;
-    height:29px;
+    line-height:28px;
+    height:28px;
 }
 
 .ui-button-sblue {
     padding: 0 12px;
-    line-height:23px;
-    height:23px;
+    line-height:24px;
+    height:24px;
     font-size:12px;
 }
-/*! endblock alice/button/1.0.0/ui-button-blue-debug.css */
-/*! endblock alice/button/1.0.0/button-debug.css */
 
-/*! block alice/button-dropdown/1.0.1/button-dropdown-debug.css */
+a.ui-button-lblue {
+    line-height:30px;
+    height:30px;
+}
+
+a.ui-button-mblue {
+    line-height:26px;
+    height:26px;
+}
+
+a.ui-button-sblue {
+    line-height:22px;
+    height:22px;
+}
+/*! endblock alice/button/1.1.0/ui-button-blue-debug.css */
+/*! endblock alice/button/1.1.0/button-debug.css */
+
+/*! block alice/button-dropdown/1.1.0/button-dropdown-debug.css */
 /* alice.dropdown 样式模块 */
 .ui-dbutton {
     padding: 0;
@@ -3902,33 +3914,20 @@ a.ui-button-sblue:hover {
 
 .ui-dbutton-orange:hover {
     color: #fff;
-    border:1px solid #F67600;
-    background-color: #F5AA2B;    
-    background: -webkit-gradient(linear, left top, left bottom, from(#FFA600), to(#FE9200));
-    background: -moz-linear-gradient(top, #FFA600, #FE9200);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFA600', endColorstr='#FE9200');
-    background:-o-linear-gradient(top, #FFA600, #FE9200);
-    background: linear-gradient(top, #FFA600, #FE9200);
-    box-shadow: 0 -2px 3px rgba(255, 255, 255, 0.4) inset;
+    background-color: #f57403;
 }
 
 .ui-dbutton-orange .ui-dbutton-self:hover,
 .ui-dbutton-orange .ui-dbutton-arrow:hover {
-    background-color: #F5AA2B;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FFB91C), to(#FFA700));
-    background: -moz-linear-gradient(top, #FFB91C, #FFA700);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFB91C', endColorstr='#FFA700');
-    background:-o-linear-gradient(top, #FFB91C, #FFA700);
-    background: linear-gradient(top, #FFB91C, #FFA700);
-    box-shadow: 0 -2px 2px rgba(255, 255, 255, 0.4) inset;
+    background-color: #fb8318;
 }
 
 .ui-dbutton-orange .ui-dbutton-self {
-    border-right: 1px solid #EF8811;
+    border-right: 1px solid #e8720b;
 }
 
 .ui-dbutton-orange .ui-dbutton-arrow {
-    border-left: 1px solid #F6B533;
+    border-left: 1px solid #fd8a27;
     color: #fff;
 }
 
@@ -3965,8 +3964,14 @@ a.ui-button-sblue:hover {
 
 /* 白色 */
 
-.ui-dbutton-white .ui-dbutton-arrow:hover {    
-    color: #666;
+.ui-dbutton-white:hover {
+    background-color: #f3f3f3;
+}
+
+.ui-dbutton-white .ui-dbutton-self:hover,
+.ui-dbutton-white .ui-dbutton-arrow:hover {
+    background-color: #fcfbfb;
+    color: #666;    
 }
 
 .ui-dbutton-white .ui-dbutton-self {
@@ -4009,7 +4014,7 @@ a.ui-button-sblue:hover {
     font-size: 10px;    
 }
 
-/*! block alice/button-dropdown/1.0.1/dropdown-debug.css */
+/*! block alice/button-dropdown/1.1.0/dropdown-debug.css */
 .ui-button-dropdown {
     position: relative;
     display: inline-block;
@@ -4034,11 +4039,11 @@ a.ui-button-sblue:hover {
     list-style: none;
 }
 .ui-button-dropdown-large {
-    top: 35px;
+    top: 33px;
     font-size: 14px;    
 }
 .ui-button-dropdown-middle {
-    top: 31px;
+    top: 29px;
     font-size: 14px;    
 }
 .ui-button-dropdown-small {
@@ -4059,8 +4064,8 @@ a.ui-button-sblue:hover {
     background-color: #DFE9F2;
     text-decoration:none;
 }
-/*! endblock alice/button-dropdown/1.0.1/dropdown-debug.css */
-/*! endblock alice/button-dropdown/1.0.1/button-dropdown-debug.css */
+/*! endblock alice/button-dropdown/1.1.0/dropdown-debug.css */
+/*! endblock alice/button-dropdown/1.1.0/button-dropdown-debug.css */
 
 /*! block alice/form/1.0.0/form-debug.css */
 /* alice.form 样式模块 */
@@ -4333,7 +4338,7 @@ a.ui-button-sblue:hover {
 .ui-nav-nosub .ui-nav-subcontainer,.ui-nav-nosub .ui-nav-subitem{display:none}
 /*! endblock alice/nav/1.0.0/nav-debug.css */
 
-/*! block alice/paging/1.0.0/paging-debug.css */
+/*! block alice/paging/1.0.1/paging-debug.css */
 /* alice.paging 样式模块 */
 
 @charset "utf-8";
@@ -4465,7 +4470,7 @@ a.ui-paging-next:hover {
     border-color: #d4d4d4;
     filter: none;
 }
-/*! endblock alice/paging/1.0.0/paging-debug.css */
+/*! endblock alice/paging/1.0.1/paging-debug.css */
 
 /*! block alice/poptip/1.0.0/poptip-debug.css */
 /* alice.poptip 样式模块 */
@@ -4949,7 +4954,7 @@ a.ui-poptip-close:hover {
 }
 /*! endblock alice/tipbox/1.0.0/tipbox-debug.css */
 
-/*! block alice/tiptext/1.0.1/tiptext-debug.css */
+/*! block alice/tiptext/1.0.2/tiptext-debug.css */
 /* alice.tiptext 样式模块 */
 
 @charset "utf-8";
@@ -4961,6 +4966,11 @@ a.ui-poptip-close:hover {
     font-size: 12px;
     zoom:1;
 }
+
+.ui-tiptext-follow {
+    padding-left: 19px;
+}
+
 .ui-tiptext-container {
     padding: 8px 12px;
     position:relative;
@@ -5120,7 +5130,7 @@ a.ui-poptip-close:hover {
     color: #60A2C5;
     cursor: pointer;
 }
-/*! endblock alice/tiptext/1.0.1/tiptext-debug.css */
+/*! endblock alice/tiptext/1.0.2/tiptext-debug.css */
 
 /*! block alice/select/1.0.0/select-debug.css */
 /* alice.select 样式模块 */
