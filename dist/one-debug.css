@@ -4472,10 +4472,8 @@ a.ui-paging-next:hover {
 }
 /*! endblock alice/paging/1.0.1/paging-debug.css */
 
-/*! block alice/poptip/1.0.0/poptip-debug.css */
+/*! block alice/poptip/1.1.1/poptip-debug.css */
 /* alice.poptip 样式模块 */
-
-@charset "utf-8";
 
 .ui-poptip {
     color: #DB7C22;
@@ -4552,88 +4550,125 @@ a.ui-poptip-close:hover {
     background: linear-gradient(top, #FFE5CA, #FFCC98);
 }
 
-.ui-poptip-arrow, .ui-poptip-arrow em, .ui-poptip-arrow span {
+.ui-poptip-arrow {
     position: absolute;
-    font-size: 14px;
-    font-family: SimSun, Hiragino Sans GB;
-    font-style: normal;
-    line-height: 21px;
     z-index: 10;
     *zoom: 1;
 }
 
-.ui-poptip-arrow em {
-    color: #ffbb76;
-}
-
-.ui-poptip-arrow span {
-    color: #FFFCEF;
+.ui-poptip-arrow em, .ui-poptip-arrow span {
+    position: absolute;
+    *zoom: 1;
+    width: 0;
+    height: 0;
+    /* 解决window下firefox的border渲染出深色边框的问题 */
+    /* http://stackoverflow.com/questions/13630886/firefox-17-and-css-borders-based-triangles-not-rendering-properly */
+    border-color: rgba(255, 255, 255, 0);
+    border-color: transparent\0;
+    *border-color: transparent;
+    _border-color:tomato;
+    _filter:chroma(color=tomato); /* http://blog.sina.com.cn/s/blog_6283c54a0100f7ae.html */
+    border-style: solid;
+    overflow: hidden;
     top: 0;
     left: 0;
 }
 
-/* ui-poptip-arrow-10 */
+/* 箭头用 border 实现 http://www.css88.com/demo/border/border1.html */
+
+/* 箭头在左边 10 */
 
 .ui-poptip-arrow-10 {
-    top: 6px;
     left: -6px;
+    top: 10px;
 }
 
 .ui-poptip-arrow-10 em {
     top: 0;
     left: -1px;
+    border-right-color: #ffbb76;
+    border-width: 6px 6px 6px 0;    
 }
-/* ui-poptip-arrow-1 */
+
+.ui-poptip-arrow-10 span {
+    border-right-color: #FFFCEF;
+    border-width: 6px 6px 6px 0;
+}
+
+/* 箭头在右边 2 */
+
 .ui-poptip-arrow-2 {
-    top: 6px;
-    right: 7px;
+    top: 10px;
+    right: 0;
 }
 
 .ui-poptip-arrow-2 em {
     top: 0;
     left: 1px;
+    border-left-color: #ffbb76;
+    border-width: 6px 0 6px 6px;
 }
+
+.ui-poptip-arrow-2 span {
+    border-left-color: #FFFCEF;
+    border-width: 6px 0 6px 6px;
+}
+
 /* ui-poptip-arrow-11 */
+.ui-poptip-arrow-11 em,
+.ui-poptip-arrow-11 span {
+
+}
+
+/* 箭头在上边 1 11 */
+
+.ui-poptip-arrow-11 em,
+.ui-poptip-arrow-1 em {
+    border-width: 0 6px 6px;
+    border-bottom-color: #ffbb76;
+    top: -1px;
+    left: 0;
+}
+
+.ui-poptip-arrow-11 span,
+.ui-poptip-arrow-1 span {
+    border-width: 0 6px 6px;
+    border-bottom-color: #FFFCEF;
+}
+
 .ui-poptip-arrow-11 {
     left: 14px;
-    top: -10px;
-    top: -9px\0;
+    top: -6px;
 }
-
-.ui-poptip-arrow-11 em {
-    top: -1px;
-    left: 0;
-}
-/* ui-poptip-arrow-1 */
 .ui-poptip-arrow-1 {
     right: 28px;
-    top: -10px;
-    top: -9px\0;
+    top: -6px;
 }
 
-.ui-poptip-arrow-1 em {
-    top: -1px;
-    left: 0;
-}
-/* ui-poptip-arrow-7 */
-.ui-poptip-arrow-7 {
-    left: 14px;
-    bottom: 10px;
-}
+/* 箭头在下方 5 7 */
 
+.ui-poptip-arrow-5 em,
 .ui-poptip-arrow-7 em {
+    border-width: 6px 6px 0;
+    border-top-color: #ffbb76;
     top: 1px;
     left: 0;
 }
-/* ui-poptip-arrow-5 */
+
+.ui-poptip-arrow-5 span,
+.ui-poptip-arrow-7 span {
+    border-width: 6px 6px 0;
+    border-top-color: #FFFCEF;
+}
+
 .ui-poptip-arrow-5 {
     right: 28px;
-    bottom: 10px;
+    bottom: 0;
 }
 
-.ui-poptip-arrow-5 em {
-    top: 1px;
-    left: 0;
+.ui-poptip-arrow-7 {
+    left: 14px;
+    bottom: 0;
 }
 
 /* ie9 filter */
@@ -4656,14 +4691,40 @@ a.ui-poptip-close:hover {
     border: 1px solid #B9C8D3;
 }
 
-.ui-poptip-blue .ui-poptip-arrow em {
-    color: #B9C8D3;
+.ui-poptip-blue .ui-poptip-arrow-10 em {
+    border-right-color: #B9C8D3;
+}
+.ui-poptip-blue .ui-poptip-arrow-11 em,
+.ui-poptip-blue .ui-poptip-arrow-1 em {
+    border-bottom-color: #B9C8D3;
+}
+.ui-poptip-blue .ui-poptip-arrow-2 em,
+.ui-poptip-blue .ui-poptip-arrow-4 em {
+    border-left-color: #B9C8D3;
+}
+.ui-poptip-blue .ui-poptip-arrow-5 em,
+.ui-poptip-blue .ui-poptip-arrow-7 em {
+    border-top-color: #B9C8D3;
 }
 
-.ui-poptip-blue .ui-poptip-arrow span {
-    color: #F8FCFF;
+.ui-poptip-blue .ui-poptip-arrow-10 span {
+    border-right-color: #F8FCFF;
 }
+.ui-poptip-blue .ui-poptip-arrow-11 span,
+.ui-poptip-blue .ui-poptip-arrow-1 span {
+    border-bottom-color: #F8FCFF;
+}
+.ui-poptip-blue .ui-poptip-arrow-2 span,
+.ui-poptip-blue .ui-poptip-arrow-4 span {
+    border-left-color: #F8FCFF;
+}
+.ui-poptip-blue .ui-poptip-arrow-5 span,
+.ui-poptip-blue .ui-poptip-arrow-7 span {
+    border-top-color: #F8FCFF;
+}
+
 /* 白色 */
+
 .ui-poptip-white {
     color: #333;
 }
@@ -4678,14 +4739,38 @@ a.ui-poptip-close:hover {
     border: 1px solid #b1b1b1;
 }
 
-.ui-poptip-white .ui-poptip-arrow em {
-    color: #b1b1b1;
+.ui-poptip-white .ui-poptip-arrow-10 em {
+    border-right-color: #b1b1b1;
+}
+.ui-poptip-white .ui-poptip-arrow-11 em,
+.ui-poptip-white .ui-poptip-arrow-1 em {
+    border-bottom-color: #b1b1b1;
+}
+.ui-poptip-white .ui-poptip-arrow-2 em,
+.ui-poptip-white .ui-poptip-arrow-4 em {
+    border-left-color: #b1b1b1;
+}
+.ui-poptip-white .ui-poptip-arrow-5 em,
+.ui-poptip-white .ui-poptip-arrow-7 em {
+    border-top-color: #b1b1b1;
 }
 
-.ui-poptip-white .ui-poptip-arrow span {
-    color: #fff;
+.ui-poptip-white .ui-poptip-arrow-10 span {
+    border-right-color: #fff;
 }
-/*! endblock alice/poptip/1.0.0/poptip-debug.css */
+.ui-poptip-white .ui-poptip-arrow-11 span,
+.ui-poptip-white .ui-poptip-arrow-1 span {
+    border-bottom-color: #fff;
+}
+.ui-poptip-white .ui-poptip-arrow-2 span,
+.ui-poptip-white .ui-poptip-arrow-4 span {
+    border-left-color: #fff;
+}
+.ui-poptip-white .ui-poptip-arrow-5 span,
+.ui-poptip-white .ui-poptip-arrow-7 span {
+    border-top-color: #fff;
+}
+/*! endblock alice/poptip/1.1.1/poptip-debug.css */
 
 /*! block alice/tab/1.0.0/tab-debug.css */
 /* alice.tab 样式模块 */
@@ -5185,19 +5270,20 @@ a.ui-select-trigger:hover {
 }
 /*! endblock alice/select/1.0.0/select-debug.css */
 
-/*! block alice/step/1.0.0/step-debug.css */
+/*! block alice/step/1.0.2/step-debug.css */
 /* alice.step 样式模块 */
 
 /* bug: http://www.aiubug.com/?p=523 */
 
 .ui-step {
-    padding: 0 25px;
+    padding: 0 40px;
     margin: 0 auto;
     font-size: 14px;
     list-style: none;
     zoom: 1;
     position: relative;
     color: #b7b7b7;
+    overflow: hidden;
 }
 
 .ui-step:after {
@@ -5211,7 +5297,7 @@ a.ui-select-trigger:hover {
 
 .ui-step li {
     float: left;
-    height: 50px;
+    height: 54px;
     margin: 0;
     width: 50%;
     position: relative;
@@ -5285,9 +5371,10 @@ a.ui-select-trigger:hover {
 .ui-step li.ui-step-end {
     position: absolute;
     top: 0;
-    right: -125px;
+    right: -110px;
     width: 150px;
     zoom: 1;
+    _clear: both;   /* 修复ie6下最后一步莫名其妙显示不出来的问题 */
 }
 
 .ui-step li.ui-step-end .ui-step-line {
@@ -5343,7 +5430,7 @@ a.ui-select-trigger:hover {
     background: #418cd6;
 }
 
-/*! block alice/step/1.0.0/mini-debug.css */
+/*! block alice/step/1.0.2/mini-debug.css */
 .ui-ministep {
     list-style: none;
     font-size: 12px;
@@ -5385,5 +5472,5 @@ a.ui-select-trigger:hover {
 .ui-ministep-active .iconfont {
     color: #FF6700;    
 }
-/*! endblock alice/step/1.0.0/mini-debug.css */
-/*! endblock alice/step/1.0.0/step-debug.css */
+/*! endblock alice/step/1.0.2/mini-debug.css */
+/*! endblock alice/step/1.0.2/step-debug.css */
