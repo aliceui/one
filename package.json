@@ -1,12 +1,13 @@
 {
     "name": "one",
-    "version": "1.1.1",
+    "version": "1.2.0",
     "family": "alice",
     "description": "alice all in one",
     "keywords": [
+        "style"
     ],
-    "homepage": "",
-    "author": "",
+    "homepage": "http://aliceui.org/",
+    "author": "偏右 <xingmin.zhu@alipay.com>",
     "repository": {
         "type": "git",
         "url": "https://github.com/aliceui/one"
@@ -21,12 +22,12 @@
             "iconfont": "alice/iconfont/1.0.0/iconfont.css",
             "grid": "alice/grid/1.0.0/grid.css",
             "animate": "alice/animate/1.0.0/animate.css",
-            "box": "alice/box/1.0.0/box.css",
+            "box": "alice/box/1.1.0/box.css",
             "button": "alice/button/1.1.1/button.css",
-            "button-dropdown": "alice/button-dropdown/1.1.0/button-dropdown.css",
-            "form": "alice/form/1.0.1/form.css",
-            "list": "alice/list/1.0.0/list.css",
-            "loading": "alice/loading/1.0.0/loading.css"
+            "button-dropdown": "alice/button-dropdown/1.1.1/button-dropdown.css",
+            "form": "alice/form/1.0.2/form.css",
+            "list": "alice/list/1.0.1/list.css",
+            "loading": "alice/loading/1.0.0/loading.css",
             "nav": "alice/nav/1.0.0/nav.css",
             "paging": "alice/paging/1.0.1/paging.css",
             "poptip": "alice/poptip/1.1.1/poptip.css",
@@ -34,7 +35,7 @@
             "table": "alice/table/1.0.1/table.css",
             "tipbox": "alice/tipbox/1.1.0/tipbox.css",
             "tiptext": "alice/tiptext/1.1.0/tiptext.css",
-            "select": "alice/select/1.0.0/select.css",
+            "select": "alice/select/1.0.2/select.css",
             "step": "alice/step/1.0.3/step.css"
         },
         "output": ["one.css"]
