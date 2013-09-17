@@ -1,4 +1,4 @@
-/*! define alice/one/1.1.1/one-debug.css */
+/*! define alice/one/1.2.0/one-debug.css */
 /*! block alice/base/1.0.1/base-debug.css */
 /* alice.base 样式模块 */
 
@@ -3517,10 +3517,8 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 }
 /*! endblock alice/animate/1.0.0/animate-debug.css */
 
-/*! block alice/box/1.0.0/box-debug.css */
+/*! block alice/box/1.1.0/box-debug.css */
 /* alice.box 样式模块 */
-
-@charset "utf-8";
 
 .ui-box {
     border: 1px solid #ccc;
@@ -3547,24 +3545,19 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 .ui-box-head {
     border-bottom: 1px solid #ccc;
     position: relative;
-}
-
-.ui-box-head-border {
-    border: 1px solid #fff;
-    height: 14px;
-    line-height: 16px;
-    overflow: hidden;
     padding: 10px;
-
-    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f1f1f1));
-    background: -moz-linear-gradient(top, #fcfcfc, #f1f1f1);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f1f1f1');
-    background: -o-linear-gradient(top, #fcfcfc, #f1f1f1);
-    background: linear-gradient(top, #fcfcfc, #f1f1f1);
+    height: 16px;
+    line-height: 16px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f9f9f9));
+    background: -moz-linear-gradient(top, #fcfcfc, #f9f9f9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f9f9f9');
+    background: -o-linear-gradient(top, #fcfcfc, #f9f9f9);
+    background: linear-gradient(top, #fcfcfc, #f9f9f9);
+    zoom: 1;
 }
 
 .ui-box-head .ui-box-head-title {
-    color: #4d4d4d;
+    color: #656565;
     font-size: 14px;
     font-weight: bold;
     float: left;
@@ -3591,28 +3584,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 .ui-box-content /* 可选，用于默认有内边距的box */ {
     padding: 10px;
 }
-
-/* 浅色 ，用于主站 */
-
-.ui-box-light,
-.ui-box-light .ui-box-head {
-    border-color: #d9d9d9;
-}
-
-.ui-box-light .ui-box-head-title {
-    color: #656565;
-}
-.ui-box-light .ui-box-head-border {
-    border: none;
-    height: 16px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f9f9f9));
-    background: -moz-linear-gradient(top, #fcfcfc, #f9f9f9);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f9f9f9');
-    background: -o-linear-gradient(top, #fcfcfc, #f9f9f9);
-    background: linear-gradient(top, #fcfcfc, #f9f9f9);
-    zoom: 1;    
-}
-/*! endblock alice/box/1.0.0/box-debug.css */
+/*! endblock alice/box/1.1.0/box-debug.css */
 
 /*! block alice/button/1.1.1/button-debug.css */
 .ui-button * {
@@ -3898,293 +3870,21 @@ a.ui-button-sblue {
 /*! endblock alice/button/1.1.1/ui-button-blue-debug.css */
 /*! endblock alice/button/1.1.1/button-debug.css */
 
-/*! block alice/button-dropdown/1.1.0/button-dropdown-debug.css */
+/*! block alice/button-dropdown/1.1.1/button-dropdown-debug.css */
 /* alice.dropdown 样式模块 */
-
-/*! block alice/button/1.1.0/button-debug.css */
-.ui-button * {
-    margin:0;
-    padding:0;
-}
-
-.ui-button {
-    display: inline-block;
-    *display: inline;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    font-family: verdana, Hiragino Sans GB;
-    font-size: 14px;
-    font-weight: bold;    
-    border-radius: 2px;    
-    padding: 0 20px;
-    *zoom: 1;
-    *overflow: visible; /* for a ie6/7 bug http://blog.csdn.net/jyy_12/article/details/6636099 */    
-}
-
-.ui-button .ui-button-text {
-    background: none;
-    padding: 0;
-    height: auto;
-    line-height: auto;
-}
-
-.ui-button:hover {
-    text-decoration: none;    
-}
-
-input.ui-button-text, button.ui-button-text {
-    *vertical-align: top; /* for a ie7 bug */
-    font-family: Hiragino Sans GB;
-}
-
-.ui-button:active {
-    position: relative;
-    top: 1px;
-}
-
-/*! block alice/button/1.1.0/ui-button-orange-debug.css */
-.ui-button-lorange,
-.ui-button-morange,
-.ui-button-sorange {
-    color: #fff;
-    border:1px solid #d66500;
-    background-color: #f57403;    
-}
-
-.ui-button-lorange:hover,
-.ui-button-morange:hover,
-.ui-button-sorange:hover {
-    background-color: #fb8318;
-}
-
-a.ui-button-lorange,
-a.ui-button-morange,
-a.ui-button-sorange,
-a.ui-button-lorange:hover,
-a.ui-button-morange:hover,
-a.ui-button-sorange:hover,
-a.ui-button-lorange:active,
-a.ui-button-morange:active,
-a.ui-button-sorange:active {
-    color:#fff;
-}
-
-.ui-button-lorange {
-    line-height:32px;
-    height:32px;
-}
-
-.ui-button-morange {
-    line-height:28px;
-    height:28px;
-}
-
-.ui-button-sorange {
-    padding: 0 12px;
-    line-height:24px;
-    height:24px;
-    font-size:12px;
-}
-
-a.ui-button-lorange {
-    line-height:30px;
-    height:30px;
-}
-
-a.ui-button-morange {
-    line-height:26px;
-    height:26px;
-}
-
-a.ui-button-sorange {
-    line-height:22px;
-    height:22px;
-}
-/*! endblock alice/button/1.1.0/ui-button-orange-debug.css */
-
-/*! block alice/button/1.1.0/ui-button-white-debug.css */
-.ui-button-lwhite,
-.ui-button-mwhite,
-.ui-button-swhite {
-    border:1px solid #afafaf;
-    background-color: #f3f3f3;
-    color: #777;
-}
-
-.ui-button-lwhite:hover,
-.ui-button-mwhite:hover,
-.ui-button-swhite:hover {
-    border: 1px solid #8e8e8e;
-    background-color: #fcfbfb;
-    color: #676d70;
-}
-
-a.ui-button-lwhite,
-a.ui-button-mwhite,
-a.ui-button-swhite,
-a.ui-button-lwhite:active,
-a.ui-button-mwhite:active,
-a.ui-button-swhite:active {
-    color: #777;
-}   
-a.ui-button-lwhite:hover,
-a.ui-button-mwhite:hover,
-a.ui-button-swhite:hover {
-    color:#676d70;
-}
-
-.ui-button-lwhite {
-    line-height:32px;
-    height:32px;
-}
-
-.ui-button-mwhite {
-    line-height:28px;
-    height:28px;
-}
-
-.ui-button-swhite {
-    line-height:24px;
-    height:24px;
-    padding:0 12px;
-    font-size:12px;
-}
-
-a.ui-button-lwhite {
-    line-height:30px;
-    height:30px;
-}
-
-a.ui-button-mwhite {
-    line-height:26px;
-    height:26px;
-}
-
-a.ui-button-swhite {
-    line-height:22px;
-    height:22px;
-}
-/*! endblock alice/button/1.1.0/ui-button-white-debug.css */
-
-/*! block alice/button/1.1.0/ui-button-disable-debug.css */
-.ui-button-ldisable,
-.ui-button-mdisable,
-.ui-button-sdisable {
-    color:#999;    
-    border: none;
-    background: #cacccd;
-    cursor: default;
-}
-
-a.ui-button-ldisable,
-a.ui-button-mdisable,
-a.ui-button-sdisable,
-a.ui-button-ldisable:active,
-a.ui-button-mdisable:active,
-a.ui-button-sdisable:active,
-a.ui-button-ldisable:hover,
-a.ui-button-mdisable:hover,
-a.ui-button-sdisable:hover {
-    color:#999; 
-}
-
-.ui-button-ldisable {
-    line-height:32px;
-    height:32px;
-}
-
-.ui-button-mdisable {
-    line-height:28px;
-    height:28px;
-}
-
-.ui-button-sdisable {
-    line-height:24px;
-    height:24px;
-    padding:0 12px;
-    font-size:12px;
-}
-
-input.ui-button-ldisable,
-input.ui-button-mdisable,
-input.ui-button-sdisable {
-    cursor: default;
-}
-/*! endblock alice/button/1.1.0/ui-button-disable-debug.css */
-
-/*! block alice/button/1.1.0/ui-button-blue-debug.css */
-.ui-button-lblue,
-.ui-button-mblue,
-.ui-button-sblue {
-    border:none;
-    color:#fff;
-    border: 1px solid #154c67;
-    background-color: #006ba1;    
-}
-
-.ui-button-lblue:hover,
-.ui-button-mblue:hover,
-.ui-button-sblue:hover {
-    background-color: #007ab8;
-}
-
-a.ui-button-lblue,
-a.ui-button-mblue,
-a.ui-button-sblue,
-a.ui-button-lblue:active,
-a.ui-button-mblue:active,
-a.ui-button-sblue:active,
-a.ui-button-lblue:hover,
-a.ui-button-mblue:hover,
-a.ui-button-sblue:hover {
-    color:#fff;
-}
-
-.ui-button-lblue {
-    line-height:32px;
-    height:32px;
-}
-
-.ui-button-mblue {
-    line-height:28px;
-    height:28px;
-}
-
-.ui-button-sblue {
-    padding: 0 12px;
-    line-height:24px;
-    height:24px;
-    font-size:12px;
-}
-
-a.ui-button-lblue {
-    line-height:30px;
-    height:30px;
-}
-
-a.ui-button-mblue {
-    line-height:26px;
-    height:26px;
-}
-
-a.ui-button-sblue {
-    line-height:22px;
-    height:22px;
-}
-/*! endblock alice/button/1.1.0/ui-button-blue-debug.css */
-/*! endblock alice/button/1.1.0/button-debug.css */
-
 .ui-dbutton {
     padding: 0;
+}
+
+.ui-dbutton:active {
+    box-shadow: none;
 }
 
 .ui-dbutton-self,
 .ui-dbutton-arrow {
     float: left;
     font-weight: normal;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .ui-dbutton-self {
@@ -4256,7 +3956,7 @@ a.ui-button-sblue {
 .ui-dbutton-white .ui-dbutton-self:hover,
 .ui-dbutton-white .ui-dbutton-arrow:hover {
     background-color: #fcfbfb;
-    color: #666;    
+    color: #666;
 }
 
 .ui-dbutton-white .ui-dbutton-self {
@@ -4296,10 +3996,10 @@ a.ui-button-sblue {
 
 .ui-button-swhite .ui-dbutton-arrow {
     width:18px;
-    font-size: 10px;    
+    font-size: 10px;
 }
 
-/*! block alice/button-dropdown/1.1.0/dropdown-debug.css */
+/*! block alice/button-dropdown/1.1.1/dropdown-debug.css */
 .ui-button-dropdown {
     position: relative;
     display: inline-block;
@@ -4349,10 +4049,10 @@ a.ui-button-sblue {
     background-color: #DFE9F2;
     text-decoration:none;
 }
-/*! endblock alice/button-dropdown/1.1.0/dropdown-debug.css */
-/*! endblock alice/button-dropdown/1.1.0/button-dropdown-debug.css */
+/*! endblock alice/button-dropdown/1.1.1/dropdown-debug.css */
+/*! endblock alice/button-dropdown/1.1.1/button-dropdown-debug.css */
 
-/*! block alice/form/1.0.1/form-debug.css */
+/*! block alice/form/1.0.2/form-debug.css */
 /* alice.form 样式模块 */
 
 .ui-form {
@@ -4374,13 +4074,13 @@ a.ui-button-sblue {
 
 .ui-form-explain {
     margin: 0;
-    padding: 5px 0 0;
+    padding: 8px 0 0;
     font-size: 12px;
     color: #B2B2B2;
 }
 
 .ui-form-other {
-    margin-left: 4px;
+    margin-left: 8px;
 }
 
 .ui-form-text {
@@ -4434,7 +4134,6 @@ a.ui-button-sblue {
 }
 
 .ui-form-large .ui-input {
-    width: 200px;    
     font-size: 14px;
     height: 18px;
     line-height: 18px;
@@ -4442,24 +4141,22 @@ a.ui-button-sblue {
 }
 
 .ui-form-large .ui-label {
-    padding-top: 12px;    
+    padding-top: 12px;
 }
 
-/*! block alice/form/1.0.1/input-debug.css */
+/*! block alice/form/1.0.2/input-debug.css */
 .ui-input {
-    width: 170px;
     padding: 7px 9px;
     line-height: 18px;
-    border: 1px solid #ccc;
-    border-top-color: #a6a6a6;
+    border: 1px solid #c1c1c1;
     color: #595959;
-    font-size: 12px;    
+    font-size: 12px;
 }
 
 .ui-input:hover,
 .ui-textarea:hover,
 .ui-input-hover {
-    border: 1px #a6a6a6 solid;
+    border: 1px #727272 solid;
     border-top-color: #808080;
 }
 
@@ -4472,8 +4169,6 @@ a.ui-button-sblue {
 }
 
 .ui-textarea {
-    width: 422px;
-    height: 79px;
     line-height: 15px;
     border: 1px #9C9C9C solid;
     padding: 1px 3px 0 4px;
@@ -4521,9 +4216,9 @@ a.ui-button-sblue {
 .ui-form-item-hover .ui-form-explain {
     color:#333;
 }
-/*! endblock alice/form/1.0.1/input-debug.css */
+/*! endblock alice/form/1.0.2/input-debug.css */
 
-/*! block alice/form/1.0.1/label-debug.css */
+/*! block alice/form/1.0.2/label-debug.css */
 .ui-label {
     float: left;
     width: 170px;
@@ -4540,21 +4235,13 @@ a.ui-button-sblue {
     margin-right: 6px;
 }
 
-.ui-checkbox {
-    height: 14px;
-    margin: 0 3px 0 0;
+input.ui-checkbox {
+    vertical-align: baseline;
 }
+/*! endblock alice/form/1.0.2/label-debug.css */
+/*! endblock alice/form/1.0.2/form-debug.css */
 
-.ui-checkbox-label {
-    font-size: 12px;
-    height: 14px;
-    line-height: 14px;
-    vertical-align: middle;
-}
-/*! endblock alice/form/1.0.1/label-debug.css */
-/*! endblock alice/form/1.0.1/form-debug.css */
-
-/*! block alice/list/1.0.0/list-debug.css */
+/*! block alice/list/1.0.1/list-debug.css */
 /* alice.list 样式模块 */
 
 .ui-list {
@@ -4566,13 +4253,17 @@ a.ui-button-sblue {
 .ui-list-item {
     font-size: 9px;
     line-height: 20px;
-    color: #08c;
 }
 .ui-list-item a {
-    font-size: 12px;
     line-height: 20px;
     text-decoration: none;
-    vertical-align: middle;
+    color: #08c;    
+}
+
+.ui-list-item a,
+.ui-list-item span.ui-list-item-text {
+    font-size: 12px;
+    vertical-align: middle;    
 }
 
 .ui-list-item a:hover {
@@ -4620,7 +4311,7 @@ a.ui-button-sblue {
     text-align: left;
     margin: 0;
 }
-/*! endblock alice/list/1.0.0/list-debug.css */
+/*! endblock alice/list/1.0.1/list-debug.css */
 
 /*! block alice/loading/1.0.0/loading-debug.css */
 /* alice.loading 样式模块 */
@@ -5530,67 +5221,94 @@ a.ui-poptip-close:hover {
 }
 /*! endblock alice/tiptext/1.1.0/tiptext-debug.css */
 
-/*! block alice/select/1.0.0/select-debug.css */
+/*! block alice/select/1.0.2/select-debug.css */
 /* alice.select 样式模块 */
+.ui-select a,
+.ui-select-trigger {
+  color: #7d7d7d;
+  font-size: 14px;
+  text-decoration: none;
+}
+.ui-select a:hover,
+.ui-select-trigger:hover {
+  text-decoration: none;
+}
 .ui-select {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-}
-.ui-select a {
+  background: #fff;
   color: #7d7d7d;
-  font-size: 12px;
-  text-decoration: none;
+  font-size: 14px;
 }
-.ui-select a:hover {
-  text-decoration: none;
+.ui-select-content {
+  margin: -1px 0 0;
+  padding: 0;
+  overflow: auto;
+  height: 100%;
+  list-style: none;
+  border: 1px solid #ccc;
+  _float: left;
 }
-a.ui-select-trigger {
+.ui-select-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ui-select-item {
+  display: block;
+  padding: 10px 15px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.ui-select-item:hover,
+.ui-select-item-hover {
+  background: #f2f2f2;
+}
+.ui-select-item-disabled,
+.ui-select-item-disabled a {
+  cursor: not-allowed;
+  color: #ccc;
+}
+.ui-select-item-disabled:hover,
+.ui-select-item-disabled a:hover {
+  background: #fff;
+}
+.ui-select-trigger {
   position: relative;
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  width: 98%;
   border: 1px solid #ccc;
   height: 30px;
   line-height: 30px;
-  text-indent: 10px;
+  text-indent: 15px;
   background: -webkit-linear-gradient(top, #fbfbfb, #f3f3f3);
   background: -moz-linear-gradient(top, #fbfbfb, #f3f3f3);
   filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#fbfbfb, endColorstr=#f3f3f3);
 }
-a.ui-select-trigger i {
+.ui-select-trigger i {
   position: absolute;
   top: 0px;
-  right: 10px;
+  right: 15px;
   line-height: 28px;
   text-indent: 0;
   font-size: 14px;
   cursor: pointer;
 }
-a.ui-select-trigger:hover {
+.ui-select-trigger:hover {
   border: 1px solid #999;
 }
-.ui-select-content {
-  width: 98%;
-  margin: -1px 0 0;
-  padding: 0;
-  background: #fff;
-  list-style: none;
-  border: 1px solid #ccc;
-}
-.ui-select-item a {
+.ui-select .ui-select-trigger {
   display: block;
-  padding: 7px 0;
-  text-indent: 10px;
 }
-.ui-select-item a:hover {
-  background: #f2f2f2;
+.ui-select-disabled,
+.ui-select .ui-select-disabled {
+  color: #aaa;
+  cursor: not-allowed;
 }
-.ui-select-item-hover a {
-  background: #f2f2f2;
-}
-/*! endblock alice/select/1.0.0/select-debug.css */
+/*! endblock alice/select/1.0.2/select-debug.css */
 
 /*! block alice/step/1.0.3/step-debug.css */
 /* alice.step 样式模块 */
