@@ -1,6 +1,6 @@
 {
     "name": "one",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "family": "alice",
     "description": "alice all in one",
     "keywords": [
@@ -26,6 +26,7 @@
             "button-dropdown": "alice/button-dropdown/1.1.0/button-dropdown.css",
             "form": "alice/form/1.0.1/form.css",
             "list": "alice/list/1.0.0/list.css",
+            "loading": "alice/loading/1.0.0/loading.css"
             "nav": "alice/nav/1.0.0/nav.css",
             "paging": "alice/paging/1.0.1/paging.css",
             "poptip": "alice/poptip/1.1.1/poptip.css",
