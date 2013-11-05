@@ -1,8 +1,6 @@
-/*! define alice/one/1.2.1/one-debug.css */
-/*! block alice/base/1.0.1/base-debug.css */
+/*! define alice/one/1.2.2/one-debug.css */
+/*! block alice/base/1.0.2/base-debug.css */
 /* alice.base 样式模块 */
-
-@charset "utf-8";
 
 /* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
 html {
@@ -112,6 +110,15 @@ ins,a {
     text-decoration:none;
 }
 
+/* 代码字体 */
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
 /* 清理浮动 */
 .fn-clear:after {
     visibility:hidden;
@@ -126,12 +133,13 @@ ins,a {
 }
 
 /* 隐藏, 通常用来与 JS 配合 */
-body .fn-hide {
+.fn-hide {
     display:none;
 }
 
 /* 设置内联, 减少浮动带来的bug */
-.fn-left,.fn-right {
+.fn-left,
+.fn-right {
     display:inline;
 }
 .fn-left {
@@ -154,6 +162,7 @@ body .fn-hide {
     background: -moz-linear-gradient(top, #fcfcfc, #f1f1f1);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f1f1f1');
     background:-o-linear-gradient(top, #fcfcfc, #f1f1f1);
+    background:-ms-linear-gradient(top, #fcfcfc, #f1f1f1);
     background: linear-gradient(top, #fcfcfc, #f1f1f1);
 }
 
@@ -163,6 +172,7 @@ body .fn-hide {
     background: -moz-linear-gradient(top, #fcfcfc, #f9f9f9);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f9f9f9');
     background:-o-linear-gradient(top, #fcfcfc, #f9f9f9);
+    background:-ms-linear-gradient(top, #fcfcfc, #f9f9f9);
     background: linear-gradient(top, #fcfcfc, #f9f9f9);
 }
 
@@ -177,7 +187,7 @@ body .fn-hide {
 .fn-webkit-adjust {
     -webkit-text-size-adjust: none;
 }
-/*! endblock alice/base/1.0.1/base-debug.css */
+/*! endblock alice/base/1.0.2/base-debug.css */
 
 /*! block alice/iconfont/1.0.0/iconfont-debug.css */
 /* 
@@ -3816,7 +3826,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 }
 /*! endblock alice/box/1.1.0/box-debug.css */
 
-/*! block alice/button/1.1.1/button-debug.css */
+/*! block alice/button/1.2.0/button-debug.css */
 .ui-button * {
     margin:0;
     padding:0;
@@ -3830,8 +3840,9 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     vertical-align: middle;
     cursor: pointer;
     font-size: 14px;
-    font-weight: bold;    
-    border-radius: 2px;    
+    font-family: inherit; /* Correct font family not being inherited in all browsers for <button> <input> */
+    font-weight: bold;
+    border-radius: 2px;
     padding: 0 20px;
     *zoom: 1;
     *overflow: visible; /* for a ie6/7 bug http://blog.csdn.net/jyy_12/article/details/6636099 */    
@@ -3860,7 +3871,7 @@ input.ui-button-text, button.ui-button-text {
     box-shadow: 1px 1px 3px #999 inset;
 }
 
-/*! block alice/button/1.1.1/ui-button-orange-debug.css */
+/*! block alice/button/1.2.0/ui-button-orange-debug.css */
 .ui-button-lorange,
 .ui-button-morange,
 .ui-button-sorange {
@@ -3918,9 +3929,9 @@ a.ui-button-sorange {
     line-height:22px;
     height:22px;
 }
-/*! endblock alice/button/1.1.1/ui-button-orange-debug.css */
+/*! endblock alice/button/1.2.0/ui-button-orange-debug.css */
 
-/*! block alice/button/1.1.1/ui-button-white-debug.css */
+/*! block alice/button/1.2.0/ui-button-white-debug.css */
 .ui-button-lwhite,
 .ui-button-mwhite,
 .ui-button-swhite {
@@ -3982,9 +3993,9 @@ a.ui-button-swhite {
     line-height:22px;
     height:22px;
 }
-/*! endblock alice/button/1.1.1/ui-button-white-debug.css */
+/*! endblock alice/button/1.2.0/ui-button-white-debug.css */
 
-/*! block alice/button/1.1.1/ui-button-disable-debug.css */
+/*! block alice/button/1.2.0/ui-button-disable-debug.css */
 .ui-button-ldisable,
 .ui-button-mdisable,
 .ui-button-sdisable {
@@ -4036,9 +4047,9 @@ a.ui-button-sdisable:hover {
     top: 0;
     box-shadow: none;
 }
-/*! endblock alice/button/1.1.1/ui-button-disable-debug.css */
+/*! endblock alice/button/1.2.0/ui-button-disable-debug.css */
 
-/*! block alice/button/1.1.1/ui-button-blue-debug.css */
+/*! block alice/button/1.2.0/ui-button-blue-debug.css */
 .ui-button-lblue,
 .ui-button-mblue,
 .ui-button-sblue {
@@ -4097,10 +4108,70 @@ a.ui-button-sblue {
     line-height:22px;
     height:22px;
 }
-/*! endblock alice/button/1.1.1/ui-button-blue-debug.css */
-/*! endblock alice/button/1.1.1/button-debug.css */
+/*! endblock alice/button/1.2.0/ui-button-blue-debug.css */
 
-/*! block alice/button-dropdown/1.1.1/button-dropdown-debug.css */
+/*! block alice/button/1.2.0/ui-button-green-debug.css */
+.ui-button-lgreen,
+.ui-button-mgreen,
+.ui-button-sgreen {
+    color: #fff;
+    border:1px solid #379000;
+    background-color: #4BB402;
+}
+
+.ui-button-lgreen:hover,
+.ui-button-mgreen:hover,
+.ui-button-sgreen:hover {
+    background-color: #66BC2A;
+}
+
+a.ui-button-lgreen,
+a.ui-button-mgreen,
+a.ui-button-sgreen,
+a.ui-button-lgreen:hover,
+a.ui-button-mgreen:hover,
+a.ui-button-sgreen:hover,
+a.ui-button-lgreen:active,
+a.ui-button-mgreen:active,
+a.ui-button-sgreen:active {
+    color:#fff;
+}
+
+.ui-button-lgreen {
+    line-height:32px;
+    height:32px;
+}
+
+.ui-button-mgreen {
+    line-height:28px;
+    height:28px;
+}
+
+.ui-button-sgreen {
+    padding: 0 12px;
+    line-height:24px;
+    height:24px;
+    font-size:12px;
+}
+
+a.ui-button-lgreen {
+    line-height:30px;
+    height:30px;
+}
+
+a.ui-button-mgreen {
+    line-height:26px;
+    height:26px;
+}
+
+a.ui-button-sgreen {
+    line-height:22px;
+    height:22px;
+}
+/*! endblock alice/button/1.2.0/ui-button-green-debug.css */
+/*! endblock alice/button/1.2.0/button-debug.css */
+
+/*! block alice/button-dropdown/1.2.0/button-dropdown-debug.css */
 /* alice.dropdown 样式模块 */
 .ui-dbutton {
     padding: 0;
@@ -4229,7 +4300,7 @@ a.ui-button-sblue {
     font-size: 10px;
 }
 
-/*! block alice/button-dropdown/1.1.1/dropdown-debug.css */
+/*! block alice/button-dropdown/1.2.0/dropdown-debug.css */
 .ui-button-dropdown {
     position: relative;
     display: inline-block;
@@ -4279,8 +4350,8 @@ a.ui-button-sblue {
     background-color: #DFE9F2;
     text-decoration:none;
 }
-/*! endblock alice/button-dropdown/1.1.1/dropdown-debug.css */
-/*! endblock alice/button-dropdown/1.1.1/button-dropdown-debug.css */
+/*! endblock alice/button-dropdown/1.2.0/dropdown-debug.css */
+/*! endblock alice/button-dropdown/1.2.0/button-dropdown-debug.css */
 
 /*! block alice/form/1.0.2/form-debug.css */
 /* alice.form 样式模块 */
@@ -5015,7 +5086,7 @@ a.ui-poptip-close:hover {
 }
 /*! endblock alice/poptip/1.1.1/poptip-debug.css */
 
-/*! block alice/tab/1.0.0/tab-debug.css */
+/*! block alice/tab/1.0.1/tab-debug.css */
 /* alice.tab 样式模块 */
 
 @charset "utf-8";
@@ -5045,6 +5116,7 @@ a.ui-poptip-close:hover {
 
 .ui-tab-item {
     display: inline-block;
+    display: inline\0; /* fix https://github.com/aliceui/tab/issues/1 */
     *display: inline;
     *zoom: 1;
     *margin-right: 4px;
@@ -5084,7 +5156,7 @@ a.ui-poptip-close:hover {
 .ui-tab-item-current a:hover {
     background: #fff;
 }
-/*! endblock alice/tab/1.0.0/tab-debug.css */
+/*! endblock alice/tab/1.0.1/tab-debug.css */
 
 /*! block alice/table/1.0.1/table-debug.css */
 /* alice.table 样式模块 */
